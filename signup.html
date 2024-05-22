@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 50px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 30px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-input:focus {
+            border-color: #aaa;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+        }
+        .signup-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-btn:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+        <form action="submit.php" method="POST">
+            <label class="form-label" for="username">Username:</label>
+            <input class="form-input" type="text" id="username" name="username" required>
+
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-input" type="email" id="email" name="email" required>
+
+            <label class="form-label" for="password">Password:</label>
+            <input class="form-input" type="password" id="password" name="password" required>
+
+            <label class="form-label" for="confirm-password">Confirm Password:</label>
+            <input class="form-input" type="password" id="confirm-password" name="confirm-password" required>
+
+            <button class="signup-btn" type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>
